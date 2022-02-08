@@ -1,0 +1,25 @@
+version: "3"
+services:
+  sdkmanager-gui:
+    container_name: sdkmanager-gui
+    build:
+      context: .
+    privileged: true
+    network_mode: host
+    ipc: host
+    volumes:
+      # デバイスへの書き込みに必要
+      - /dev:/dev
+      # デバイス・ネットワーク情報の取得に必要
+      - /run/udev:/run/udev
+      - /etc/udev:/etc/udev
+      - /var/run/dbus:/var/run/dbus
+
+      # ダウンロード済みファイル
+      - /var/lib/sdkmanager-docker/nvidia:/home/nvidia/Downloads/nvidia
+      # データベース・認証情報等
+      - /var/lib/sdkmanager-docker/nvsdkm:/home/nvidia/.nvsdkm
+      # 展開済みファイル等
+      # - /var/lib/sdkmanager-docker/nvidia_sdk:/home/nvidia/Downloads/nvidia_sdk
+    environment:
+      - DISPLAY
