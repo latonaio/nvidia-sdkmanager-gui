@@ -15,7 +15,9 @@ Jetson などのデバイスの OSインストール に必要な NVIDIA SDK Man
 * Docker Compose v2
 * GNU Make
 
-また、事前に以下の動作確認が必要です。  
+### 事前確認
+
+本マイクロサービスの使用には、事前に以下の動作確認が必要です。  
 
 * SDK Manager GUI 起動
 * Jetson USB 接続の認識・再認識
