@@ -5,7 +5,6 @@ Jetson などのデバイスの OSインストール に必要な NVIDIA SDK Man
 また他のLinux環境上でも動作する公式Dockerイメージも配布されていますが、CLIでしか動作しません。  
 本スクリプトは、公式Dockerイメージを拡張し、より多くのLinux環境上でSDK Manager GUIを起動させるためのものです。  
 
-
 ## 動作環境
 
 * x64 Linux 環境
