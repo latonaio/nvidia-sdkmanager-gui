@@ -16,10 +16,10 @@ services:
       - /var/run/dbus:/var/run/dbus
 
       # ダウンロード済みファイル
-      - /var/lib/sdkmanager-docker/nvidia:/home/nvidia/Downloads/nvidia
+      - /var/lib/sdkmanager-docker/nvidia:/var/lib/sdkmanager-docker/nvidia
       # データベース・認証情報等
-      - /var/lib/sdkmanager-docker/nvsdkm:/home/nvidia/.nvsdkm
+      - /var/lib/sdkmanager-docker/nvsdkm:/var/lib/sdkmanager-docker/nvsdkm
       # 展開済みファイル等
-      # - /var/lib/sdkmanager-docker/nvidia_sdk:/home/nvidia/Downloads/nvidia_sdk
+      - /var/lib/sdkmanager-docker/nvidia_sdk:/var/lib/sdkmanager-docker/nvidia_sdk
     environment:
       - DISPLAY

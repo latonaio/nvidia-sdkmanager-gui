@@ -19,9 +19,9 @@ Jetson などのデバイスの OSインストール に必要な NVIDIA SDK Man
 事前に以下の動作確認が必要です。  
 
 * SDK Manager GUI 起動
-* Jetson USB 接続の認識・再認識
-* Jetson AGX Xavier への各種インストール
-* Jetson AGX Xavier の NVMe SSD へのインストール (JetPack 4.6 以降)
+* NVIDIA Jetson USB 接続の認識・再認識
+* NVIDIA Jetson への各種インストール
+* NVIDIA Jetson の NVMe SSD へのインストール (JetPack 4.6 以降)
 
 ## NVIDIA SDK Managerについて
 
@@ -56,9 +56,20 @@ make setup
 ```
 
 
+### (オプション) デスクトップアイコンの作成
+
+デスクトップ上に SDK Manager のアイコンを配置すると、素早く起動できます。
+
+```sh
+make icon
+```
+
+※ アイコン作成後にこのディレクトリを別の場所に移動させると動作しなくなります。
+
+
 ## 実行
 
-次のコマンドを実行します。
+デスクトップアイコンを使用せずに起動するには、次のコマンドを実行します。
 
 ```sh
 make launch

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=NVIDIA SDK Manager
+Comment=NVIDIA SDK Manager
+Path=%PATH%
+Exec=make launch
+Type=Application
+Icon=nvidia-sdkmanager
+Categories=Development;
+MimeType=x-scheme-handler/sdkmanager;
